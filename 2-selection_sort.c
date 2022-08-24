@@ -12,7 +12,7 @@ int temp = *x;
 void selection_sort(int *array, size_t size)
 {
 size_t i, j, jmin;
-for (i = 0; i < size - 1; i++)
+for (i = 0; i <= size - 1; i++)
 {
 jmin = i;
 for (j = i+1; j < size; j++)
