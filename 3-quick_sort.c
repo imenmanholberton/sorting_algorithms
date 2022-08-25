@@ -11,20 +11,20 @@ void swap(int *a, int *b)
 }
 int split(int *arr, int low, int high, size_t size)
 {
-    int pivot;
-    int i = low;
-    int j;
-    pivot = arr[high];
-    for (j = i; j < high; j++)
-    {
-        if (arr[j] < pivot)
-        {
-            swap(&arr[i], &arr[j]);
-            if (i != j)
-                print_array(arr, size);
-            i++;
-        }
-    }
+int pivot;
+int i = low;
+int j;
+pivot = arr[high];
+for (j = low; j < high; j++)
+{
+if (arr[j] < pivot)
+{
+swap(&arr[i], &arr[j]);
+if (i != j)
+print_array(arr, size);
+i++;
+}
+}
     swap(&arr[i], &arr[high]);
     if (i != j)
         print_array(arr, size);
