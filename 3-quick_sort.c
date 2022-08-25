@@ -42,7 +42,7 @@ void quick_sort_array(int *arr, int low, int high, size_t size)
 }
 void quick_sort(int *array, size_t size)
 {
-    if (size <= 2)
+    if (size < 2 || array == NULL)
         return;
     quick_sort_array(array, 0, size - 1, size);
 }
