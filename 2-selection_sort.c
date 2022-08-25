@@ -13,7 +13,7 @@ void swap(int x, int y)
 void selection_sort(int *array, size_t size)
 {
     size_t i = 0, j, min;
-   if (size <= 1)
+   if (size == 0|| size == 1)
     {
         return;
     }
